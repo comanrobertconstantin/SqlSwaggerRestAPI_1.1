@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlSwaggerRestAPI_1.1", "SqlSwaggerRestAPI_1.1\SqlSwaggerRestAPI_1.1.csproj", "{D92BB6FB-2911-4A89-B744-14A5E766FC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlSwaggerRestAPI_WPF_1.1", "SqlSwaggerRestAPI_WPF_1.1\SqlSwaggerRestAPI_WPF_1.1.csproj", "{C0A7BD00-9307-4DDD-ABA5-509DE8E40287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92BB6FB-2911-4A89-B744-14A5E766FC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92BB6FB-2911-4A89-B744-14A5E766FC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92BB6FB-2911-4A89-B744-14A5E766FC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92BB6FB-2911-4A89-B744-14A5E766FC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A7BD00-9307-4DDD-ABA5-509DE8E40287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A7BD00-9307-4DDD-ABA5-509DE8E40287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A7BD00-9307-4DDD-ABA5-509DE8E40287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A7BD00-9307-4DDD-ABA5-509DE8E40287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03D15190-C4EE-4699-A95A-FC3A8FE8F7DD}
+	EndGlobalSection
+EndGlobal
