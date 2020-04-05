@@ -24,5 +24,24 @@ namespace SqlSwaggerRestAPI_WPF_1._1
         {
             InitializeComponent();
         }
+
+        private void btnGetStudent_Click(object sender, RoutedEventArgs e)
+        {
+            //double risArea = 0;
+
+            //double raggio = Convert.ToDouble(txtRadius.Text);
+
+            //HttpClient client = new HttpClient();
+
+            //string urlArea = $"https://localhost:44327/api/Operations/GetArea?raggio={raggio}";
+
+            //HttpResponseMessage responseArea = await client.GetAsync(urlArea);
+
+            //string contentArea = await responseArea.Content.ReadAsStringAsync();
+
+            //risArea = JsonConvert.DeserializeObject<double>(contentArea);
+
+            //Dispatcher.Invoke(() => lblArea.Content = risArea);
+        }
     }
 }
