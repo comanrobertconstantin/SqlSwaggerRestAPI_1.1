@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,23 +27,23 @@ namespace SqlSwaggerRestAPI_WPF_1._1
             InitializeComponent();
         }
 
-        private void btnGetStudent_Click(object sender, RoutedEventArgs e)
+        private async void btnGetStudent_Click(object sender, RoutedEventArgs e)
         {
-            //double risArea = 0;
+            string student = "";
 
-            //double raggio = Convert.ToDouble(txtRadius.Text);
+            int id = Convert.ToInt32(txtStudentID.Text);
 
-            //HttpClient client = new HttpClient();
+            HttpClient client = new HttpClient();
 
-            //string urlArea = $"https://localhost:44327/api/Operations/GetArea?raggio={raggio}";
+            string url = $"https://localhost:44394/api/Operations?idStudent={idStudent}";
+            
+            HttpResponseMessage responseStudent = await client.GetAsync(url);
 
-            //HttpResponseMessage responseArea = await client.GetAsync(urlArea);
+            string contentStudent = await responseStudent.Content.ReadAsStringAsync();
 
-            //string contentArea = await responseArea.Content.ReadAsStringAsync();
+            student = JsonConvert.DeserializeObject<string>(contentStudent);
 
-            //risArea = JsonConvert.DeserializeObject<double>(contentArea);
-
-            //Dispatcher.Invoke(() => lblArea.Content = risArea);
+            Dispatcher.Invoke(() => txtViewStudent.Text = student);
         }
     }
 }
